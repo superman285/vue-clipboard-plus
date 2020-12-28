@@ -1,0 +1,27 @@
+{
+  "name": "vue-clipboard-plus",
+  "version": "1.0.0",
+  "description": "A Vuejs2 and Vuejs3 binding for clipboard.js, based on vue-clipboard2. That's awsome✨",
+  "main": "index.js",
+  "author": "superman285",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superman285/vue-clipboard-plus.git"
+  },
+  "scripts": {
+    "lint": "eslint src/vue-clipboard-plus.js",
+    "prebuild": "npm run lint",
+    "build": "webpack",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "webpack": "^5.11.0",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.16.0",
+    "webpack-cli": "^4.3.0"
+  },
+  "dependencies": {}
+}
