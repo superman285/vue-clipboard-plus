@@ -1,6 +1,6 @@
 {
   "name": "vue-clipboard-plus",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A Vuejs2 and Vuejs3 binding for clipboard.js, based on vue-clipboard2. That's awsome✨",
   "main": "index.js",
   "author": "superman285",
@@ -13,7 +13,7 @@
     "lint": "eslint src/vue-clipboard-plus.js",
     "prebuild": "npm run lint",
     "build": "webpack",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "webpack": "^5.11.0",

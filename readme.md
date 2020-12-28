@@ -140,23 +140,23 @@ new Vue({
 </template>
 
 <script>
-	const {createApp, ref} = Vue
+const {createApp, ref} = Vue
 
-	const app = createApp({
-		template: '#t',
-		setup() {
-			const message = ref('Copy These Text📚')
-			const done = function() {
-				alert('Copied!')
-			}
-			return {
-				message,
-				done
-			}
+const app = createApp({
+	template: '#t',
+	setup() {
+		const message = ref('Copy These Text📚')
+		const done = function() {
+			alert('Copied!')
 		}
-	})
+		return {
+			message,
+			done
+		}
+	}
+})
 
-	app.use(VueClipboard).mount('#app')
+app.use(VueClipboard).mount('#app')
 </script>
 ```
 
@@ -207,32 +207,32 @@ new Vue({
 </template>
 
 <script>
-	const {createApp, ref, getCurrentInstance} = Vue
+const {createApp, ref, getCurrentInstance} = Vue
 
-	const app = createApp({
-		template: '#t',
-		setup() {
-			const {ctx} = getCurrentInstance()
+const app = createApp({
+	template: '#t',
+	setup() {
+		const {ctx} = getCurrentInstance()
 
-			const message = ref('Copy These Text📚')
-			const doCopy = (function () {
-				this.$copyText(this.message).then(function (e) {
-					alert('Copied')
-					console.log(e)
-				}, function (e) {
-					alert('Can not copy')
-					console.log(e)
-				})
-			}).bind(ctx)
+		const message = ref('Copy These Text📚')
+		const doCopy = (function () {
+			this.$copyText(this.message).then(function (e) {
+				alert('Copied')
+				console.log(e)
+			}, function (e) {
+				alert('Can not copy')
+				console.log(e)
+			})
+		}).bind(ctx)
 
-			return {
-				message,
-				doCopy
-			}
+		return {
+			message,
+			doCopy
 		}
-	})
+	}
+})
 
-	app.use(VueClipboard).mount('#app')
+app.use(VueClipboard).mount('#app')
 </script>
 ```
 
