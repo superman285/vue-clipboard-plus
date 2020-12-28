@@ -1,8 +1,8 @@
 {
   "name": "vue-clipboard-plus",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Vuejs2 and Vuejs3 binding for clipboard.js, based on vue-clipboard2. That's awsome✨",
-  "main": "index.js",
+  "main": "dist/vue-clipboard-plus.min.js",
   "author": "superman285",
   "license": "MIT",
   "repository": {
