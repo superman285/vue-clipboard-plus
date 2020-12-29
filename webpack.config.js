@@ -1,20 +1,14 @@
 
 module.exports = {
 	mode: 'production',
-
 	entry: {
 		'vue-clipboard-plus': './src/vue-clipboard-plus.js',
 		'cdnlink-vue-clipboard-plus': './src/cdnlink-vue-clipboard-plus.js'
 	},
 	output: {
-		filename: '[name].min2.js',
+		filename: '[name].min.js',
 		libraryTarget: 'umd'
 	},
-	/*entry: './src/vue-clipboard-plus.js',
-	output: {
-		filename: 'clip.min.js',
-		libraryTarget: 'umd'
-	},*/
 	module: {
 		rules: [
 			{

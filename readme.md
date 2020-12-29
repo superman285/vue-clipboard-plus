@@ -41,11 +41,11 @@ For standalone usage:
 ```html
 <!-- Vue2 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.6/vue.js"></script>
-<script src="dist/cdnlink-vue-clipboard.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-clipboard-plus@1.0.6/dist/cdnlink-vue-clipboard-plus.min.js"></script>
 
 <!-- Vue3 -->
 <script src="https://unpkg.com/vue@next"></script>
-<script src="dist/cdnlink-vue-clipboard.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-clipboard-plus@1.0.6/dist/cdnlink-vue-clipboard-plus.min.js"></script>
 ```
 
 
